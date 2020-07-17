@@ -10,7 +10,7 @@ import requests
 cascade_path = '/home/pi/Downloads/haarcascade_frontalface_default.xml'
 
 #定义白名单
-white_list = ['Luotian', 'Panweiwei', 'Liujiawei']
+white_list = ['some names']
 
 #是否发现有效二维码
 find_qrcode = True
@@ -54,7 +54,7 @@ ServoPin = 11
 class SMUploader:
     def __init__(self):
         self.session = requests.Session()
-        self.api_key = 'YOUR KEY'
+        self.api_key = 'YOUR KEY' #CHANGE HERE
 
     def upload_sm(self, file):
         url = 'https://sm.ms/api/v2/upload'
@@ -82,7 +82,7 @@ class SMUploader:
 #Push to wechat
 class ServerChanPush:
     def __init__(self):
-        self.url = 'https://sc.ftqq.com/YOUR_URL'
+        self.url = 'https://sc.ftqq.com/YOUR_URL'  #CHANGE HERE
 
     def send_message(self, title, content):
         data = {
