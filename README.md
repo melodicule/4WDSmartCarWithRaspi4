@@ -6,4 +6,4 @@
 3. 小车自动通过舵机调整摄像头方向，对准来访者的二维码，并进行识别；
 4. 小车能原路返回，并利用超声波模块定点停车，舵机归位；
 ## 视频演示
-[视频(BiliBili)](https://www.bilibili.com/)
+[视频(BiliBili)](https://www.bilibili.com/video/av413979826)
