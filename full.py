@@ -489,7 +489,7 @@ try:
                 time.sleep(0.05)
                 ret = int(spin_test())
                 out_count = ret * (out_count + ret)
-                if out_count >= 3 #连续3次至少两个位置检测到黑线
+                if out_count >= 3: #连续3次至少两个位置检测到黑线
                     break
             #停下
             brake()
